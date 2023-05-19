@@ -8,5 +8,6 @@ namespace ETicaratApp.Entities
 {
     internal class PaymentMethod
     {
+        //bu test amaclıdır
     }
 }
