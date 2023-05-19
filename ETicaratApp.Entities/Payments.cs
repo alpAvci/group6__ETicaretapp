@@ -9,6 +9,6 @@ namespace ETicaratApp.Entities
     internal class Payments
     {
 
-        // test inş patlamaz
+        // test inş patlamaz . 
     }
 }
