@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    internal class Orders
+    internal class SalesVaultAction
     {
     }
 }
