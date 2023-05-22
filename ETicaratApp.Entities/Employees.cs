@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    internal class Employees
+    public class Employees
     {
+        public int EmployeesId { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+
     }
 }
