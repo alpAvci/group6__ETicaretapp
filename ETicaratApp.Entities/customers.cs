@@ -20,6 +20,8 @@ namespace ETicaratApp.Entities
         public string Country { get; set; }
         public string Address { get; set; }
 
+        //vivik
+
         
     }
     }
