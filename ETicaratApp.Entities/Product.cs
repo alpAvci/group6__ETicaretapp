@@ -31,8 +31,12 @@ namespace ETicaratApp.Entities
 
        
         [Column(TypeName = "Varchar")]
-        [StringLength(40)]
+        [StringLength(200)]
         public string ProducktImage { get; set; }
+
+
+
+        public SellingAction SellingAction { get; set; } 
 
     }
 }
