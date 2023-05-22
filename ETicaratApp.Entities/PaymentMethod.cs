@@ -8,11 +8,7 @@ namespace ETicaratApp.Entities
 {
     internal class PaymentMethod
     {
-        // alpcan test 
-
-        //asdasdasd
-        //asdasdgwsg
-        //asdasdadasdas
+        
         
     }
 }
