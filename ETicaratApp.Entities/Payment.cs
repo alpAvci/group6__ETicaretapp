@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    internal class Payments
+    internal class Payment
     {
         public int CustomerId { get; set; }
 

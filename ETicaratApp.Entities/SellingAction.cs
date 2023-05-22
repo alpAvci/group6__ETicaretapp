@@ -17,5 +17,14 @@ namespace ETicaratApp.Entities
         public int Unit { get; set; }
         public int TotalCost { get; set; }
 
+        public ICollection<Product>  Products { get;}
+        public ICollection<Customer> Customers  { get;}
+        public ICollection<Employee> Employees  { get;}
+
+
+
+
+
+
     }
 }

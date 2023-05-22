@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    public class Employees
+    public class Employee
     {
         [Key]
         public int EmployeesId { get; set; }

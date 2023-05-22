@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    public class Customers
+    public class Customer
     {
         [Key]
         public int CustomerId { get; set; }
@@ -20,7 +20,7 @@ namespace ETicaratApp.Entities
         public string Country { get; set; }
         public string Address { get; set; }
 
-        //vivik
+        
 
         
     }
