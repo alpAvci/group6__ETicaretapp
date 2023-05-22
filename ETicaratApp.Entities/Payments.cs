@@ -8,7 +8,13 @@ namespace ETicaratApp.Entities
 {
     internal class Payments
     {
+        public int CustomerId { get; set; }
 
-        // test inş patlamaz ...
+
+        public ICollection<PaymentMethod> PaymentMethods { get; set; }
+        
+
+
+
     }
 }
