@@ -9,7 +9,7 @@ using ETicaratApp.Entities.Concrete;
 
 namespace ETicaratApp.Entities
 {
-    internal class OrderDetail
+    public class OrderDetail
     {
 
 
