@@ -36,6 +36,7 @@ namespace ETicaratApp.Entities
 
 
 
+        public Category Category { get; set; }
         public SellingAction SellingAction { get; set; } 
 
     }

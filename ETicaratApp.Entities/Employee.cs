@@ -13,15 +13,15 @@ namespace ETicaratApp.Entities
         [Key]
         public int EmployeesId { get; set; }
 
-        [Column(Type = "Varchar")]
+        [Column(TypeName = "varchar")]
         [StringLength(10)]
         public string Name { get; set; }
 
-        [Column(Type = "Varchar")]
+        [Column(TypeName = " varchar")]
         [StringLength(15)]
         public string Surname { get; set; }
 
-        //f
+        public Employee employee { get; set; }
        
     }
 }
