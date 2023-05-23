@@ -6,24 +6,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaratApp.Entities
+namespace ETicaratApp.Entities.Concrete
 {
     public class Admin
     {
         [Key]
         public int AdminId { get; set; }
 
-        [Column(Type = "Varchar")]
-        [StringLength(10)]
+        [Column(TypeName = "Varchar")]
+        [StringLength(15)]
         public string UserName { get; set; }
 
-        [Column(Type = "Varchar")]
-        [StringLength(10)]
+        [Column(TypeName = "Varchar")]
+        [StringLength(15)]
         public string Password { get; set; }
 
-        [Column(Type = "Varchar")]
+        [Column(TypeName = "char")]
         [StringLength(1)]
-        public string Authority { get; set; }   
+        public string Authority { get; set; }
 
 
     }

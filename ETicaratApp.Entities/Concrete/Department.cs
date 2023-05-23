@@ -13,11 +13,11 @@ namespace ETicaratApp.Entities
         [Key]
         public int DepartmentId { get; set; }
 
-        [Column(Type = "Varchar")]
+        [Column(TypeName = "Varchar")]
         [StringLength(10)]
         public string DepartmentName { get; set; }
 
 
-        public ICollection<Employee> Employees { get;}
+        public ICollection<Employee> Employees { get; set; }
     }
 }

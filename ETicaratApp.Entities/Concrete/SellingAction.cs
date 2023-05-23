@@ -4,10 +4,11 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ETicaratApp.Entities.Concrete;
 
 namespace ETicaratApp.Entities
 {
-    internal class SellingAction
+    public class SellingAction
     {
         [Key]
         public int SellingId { get; set; }

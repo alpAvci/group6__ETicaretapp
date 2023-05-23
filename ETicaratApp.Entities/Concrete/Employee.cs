@@ -21,7 +21,9 @@ namespace ETicaratApp.Entities
         [StringLength(15)]
         public string Surname { get; set; }
 
-        public Employee employee { get; set; }
-       
+        public SellingAction SellingAction { get; set; } 
+
+        public Department Department { get; set; }
+
     }
 }

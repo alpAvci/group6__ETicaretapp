@@ -6,18 +6,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaratApp.Entities
+namespace ETicaratApp.Entities.Concrete
 {
     public class Category
     {
         [Key]
         public int CategoryId { get; set; }
 
-        [Column(Type = "Varchar")]
+        [Column(TypeName = "Varchar")]
         [StringLength(15)]
         public string CategoryName { get; set; }
 
-        public ICollection<Product> Products { get; set;}
+        public ICollection<Product> Products { get; set; }
 
     }
 }

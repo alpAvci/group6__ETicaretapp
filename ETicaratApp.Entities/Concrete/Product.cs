@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ETicaratApp.Entities.Concrete;
 
 namespace ETicaratApp.Entities
 {
@@ -22,22 +23,39 @@ namespace ETicaratApp.Entities
         [Column(TypeName = "Varchar")]
         [StringLength(40)]
         public string ProductBrand  { get; set; }
-       
-        
-        
+
+
+        [Column(TypeName = "Varchar")]
+        [StringLength(10)]
+        public string color { get; set; }
+
+        [Column(TypeName = "Varchar")]
+        [StringLength(10)]
+        public string size { get; set; }
+
+
+        [Column(TypeName = "Varchar")]
+        [StringLength(300)]
+        public string ProductDescription { get; set; }
+
+
+        [Column(TypeName = "Varchar")]
+        [StringLength(300)]
+        public string ProductFeatur { get; set; }
         public short ProductStock  { get; set; }
-        public short SellingPrice { get; set; }
+        public short Discount { get; set; }
+        public decimal SellingPrice { get; set; }
         public bool IsStock { get; set; }
 
        
         [Column(TypeName = "Varchar")]
-        [StringLength(200)]
+        [StringLength(270)]
         public string ProducktImage { get; set; }
 
 
-
+        public SellingAction SellingAction { get; set; }
         public Category Category { get; set; }
-        public SellingAction SellingAction { get; set; } 
+        
 
     }
 }
