@@ -25,4 +25,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ETicaratApp.DAL\ETicaretApp.DAL.csproj" />
+    <ProjectReference Include="..\ETicaratApp.Entities\ETicaratApp.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

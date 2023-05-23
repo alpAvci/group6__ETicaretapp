@@ -20,6 +20,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ETicaratApp.BLL\ETicaretApp.BLL.csproj" />
+    <ProjectReference Include="..\ETicaratApp.DAL\ETicaretApp.DAL.csproj" />
+    <ProjectReference Include="..\ETicaratApp.Entities\ETicaratApp.Entities.csproj" />
+    <ProjectReference Include="..\ETicaratApp.WebSite.UI\ETicaretApp.WebSite.UI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="Views\Home\Privacy.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
