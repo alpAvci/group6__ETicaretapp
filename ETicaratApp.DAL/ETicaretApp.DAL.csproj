@@ -35,4 +35,8 @@
     <Folder Include="Abstarct\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ETicaratApp.Entities\ETicaratApp.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
