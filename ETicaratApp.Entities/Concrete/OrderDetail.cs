@@ -11,7 +11,7 @@ namespace ETicaratApp.Entities
 {
     public class OrderDetail
     {
-
+        [Key]
 
         public int OrderDetailId { get; set; }
 

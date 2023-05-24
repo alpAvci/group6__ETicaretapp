@@ -11,6 +11,8 @@ namespace ETicaratApp.Entities
 {
    public class Order
     {
+
+        [Key]
         public int OrderId { get; set; }
 
 
@@ -34,9 +36,6 @@ namespace ETicaratApp.Entities
         [Column(TypeName = "Varchar")]
         [StringLength(15)]       
         public string ErrMsg { get; set; }
-
-
-
 
 
 
