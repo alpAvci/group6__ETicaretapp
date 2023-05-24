@@ -40,7 +40,7 @@ namespace ETicaratApp.Entities
 
 
         public Customer Customer { get; set; }
-        public OrderDetail OrderDetail { get; set; }
+        
         public ICollection<Product> Products { get; set; }
 
 
