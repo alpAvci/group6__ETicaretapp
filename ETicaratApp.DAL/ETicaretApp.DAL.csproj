@@ -7,12 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Abstarct\**" />
     <Compile Remove="DbContext\**" />
     <Compile Remove="Helpers\**" />
     <Compile Remove="Repositories\**" />
+    <EmbeddedResource Remove="Abstarct\**" />
     <EmbeddedResource Remove="DbContext\**" />
     <EmbeddedResource Remove="Helpers\**" />
     <EmbeddedResource Remove="Repositories\**" />
+    <None Remove="Abstarct\**" />
     <None Remove="DbContext\**" />
     <None Remove="Helpers\**" />
     <None Remove="Repositories\**" />
@@ -29,10 +32,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Abstarct\" />
   </ItemGroup>
 
   <ItemGroup>
