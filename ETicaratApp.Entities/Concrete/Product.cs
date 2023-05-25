@@ -9,53 +9,46 @@ using ETicaratApp.Entities.Concrete;
 
 namespace ETicaratApp.Entities
 {
-    public class Product
+    public partial class Product
     {
         [Key] 
         public int ProductId { get; set; }
-
-        [Column(TypeName="Varchar")]
-        [StringLength(40)]
-        public string ProductName  { get; set; }
-
-       
         
-        [Column(TypeName = "Varchar")]
-        [StringLength(40)]
-        public string ProductBrand  { get; set; }
+        //[ForeignKey("Category")]
+        public int CategoryId { get; set; }
 
-
-        [Column(TypeName = "Varchar")]
-        [StringLength(10)]
+        
+ 
+        public string ProductName  { get; set; }
+        public string ProductBrand { get; set; } 
         public string color { get; set; }
-
-        [Column(TypeName = "Varchar")]
-        [StringLength(10)]
         public string size { get; set; }
-
-
-        [Column(TypeName = "Varchar")]
-        [StringLength(300)]
-        public string ProductDescription { get; set; }
-
-
-        [Column(TypeName = "Varchar")]
-        [StringLength(300)]
+        public string ProductDescription { get; set; }   
         public string ProductFeatur { get; set; }
+        public int UnitPrice { get; set; }
         public short ProductStock  { get; set; }
         public short Discount { get; set; }
+
+        public bool? DiscountAvailable { get; set; }
+        public bool? CurrentOrder { get; set; }
         public decimal SellingPrice { get; set; }
         public bool IsStock { get; set; }
-
-       
-        [Column(TypeName = "Varchar")]
-        [StringLength(270)]
         public string ProducktImage { get; set; }
 
 
-        public SellingAction SellingAction { get; set; }
-        public Category Category { get; set; }
         
+        
+        
+        
+        
+       
+        
+        public SellingAction SellingAction { get; set; }
+        
+        public virtual Category Category { get; set; }
+
+        public virtual List<OrderDetail> OrderDetail { get; set; }
+
 
     }
 }

@@ -8,16 +8,17 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities.Concrete
 {
-    public class Category
+    public partial class Category
     {
         [Key]
         public int CategoryId { get; set; }
 
-        [Column(TypeName = "Varchar")]
-        [StringLength(15)]
+        
         public string CategoryName { get; set; }
 
-        public ICollection<Product> Products { get; set; }
+        public string CategoryDescription { get; set; }
+
+        public virtual ICollection<Product> Products { get; } = new List<Product>();
 
     }
 }

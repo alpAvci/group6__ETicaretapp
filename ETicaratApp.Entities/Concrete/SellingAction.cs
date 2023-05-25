@@ -8,7 +8,7 @@ using ETicaratApp.Entities.Concrete;
 
 namespace ETicaratApp.Entities
 {
-    public class SellingAction
+    public partial class SellingAction
     {
         [Key]
         public int SellingId { get; set; }

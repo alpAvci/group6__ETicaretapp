@@ -8,22 +8,20 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    public class Employee
+    public partial class Employee
     {
         [Key]
         public int EmployeesId { get; set; }
 
-        [Column(TypeName = "varchar")]
-        [StringLength(10)]
+      
         public string Name { get; set; }
-
-        [Column(TypeName = " varchar")]
-        [StringLength(15)]
         public string Surname { get; set; }
 
-        public SellingAction SellingAction { get; set; } 
 
-        public Department Department { get; set; }
+
+
+       
+        public virtual Department Department { get; set; }
 
     }
 }

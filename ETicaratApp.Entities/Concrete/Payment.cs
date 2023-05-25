@@ -7,14 +7,19 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    public class Payment
+    public partial class Payment
     {
         [Key]
-        public int CustomerId { get; set; }
+        public int PaymentId { get; set; }
 
-
-        public ICollection<PaymentMethod> PaymentMethods { get; set; }
         
+
+
+        public  string PaymentType { get; set; }
+
+
+        
+        public Order Order { get; set; }
 
 
 

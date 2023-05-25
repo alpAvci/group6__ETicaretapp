@@ -6,39 +6,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ETicaratApp.Entities.Concrete;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ETicaratApp.Entities
 {
-    public class OrderDetail
+    public  partial class OrderDetail
     {
         [Key]
-
         public int OrderDetailId { get; set; }
 
+        //[ForeignKey("Product")]
+        public int ProductId { get; set; }
+        //[ForeignKey("Order")]
+        public int OrderId { get; set; }
+
+
+        public string OrderNumber { get; set; }
         public decimal Price { get; set; }
-        public decimal Quantity { get; set; }
-        
+        public decimal Quantity { get; set; } 
         public double Discount  { get; set; }
-
         public decimal Total { get; set;}
-
-
-        [Column(TypeName = "Varchar")]
-        [StringLength(10)]
         public string color { get; set; }
-
-        [Column(TypeName = "Varchar")]
-        [StringLength(10)]
         public string size { get; set; }
+        public bool OrderStatus { get; set; }
 
 
 
 
 
-        public Customer Customer { get; set; }
+
         public Order Order { get; set; }
+        public virtual Product Product { get; set; }
 
-        public ICollection<Product> Products { get; set; }
+
 
 
 

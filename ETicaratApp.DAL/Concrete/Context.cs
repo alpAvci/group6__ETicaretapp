@@ -15,7 +15,7 @@ namespace ETicaretApp.DAL.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server= DESKTOP-A3G29U8\\SQLEXPRESS; database=EcommerceDb; Integrated Security=True;");
+            optionsBuilder.UseSqlServer("server= THAVICII\\SQLSERVER; database=EcommerceDb; Integrated Security=True; TrustServerCertificate=True");
         }
 
         public DbSet<Admin> Admins { get; set; }

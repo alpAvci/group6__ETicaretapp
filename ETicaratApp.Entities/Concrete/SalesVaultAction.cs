@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    public class SalesVaultAction
+    public partial class SalesVaultAction
     {
         [Key]
         public int SalesVaultId { get; set; }

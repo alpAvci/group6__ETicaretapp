@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.Entities
 {
-    public class PaymentMethod
+    public partial class PaymentMethod
     {
+        
         [Key]
         public int PaymentMethodId { get; set; }
-        
+
+        public int  paymentId { get; set; }
+
     }
 }
