@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ETicaretApp.DAL.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230524122755_mg1")]
-    partial class mg1
+    [Migration("20230525174450_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,18 +35,15 @@ namespace ETicaretApp.DAL.Migrations
 
                     b.Property<string>("Authority")
                         .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("char");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("AdminId");
 
@@ -61,10 +58,13 @@ namespace ETicaretApp.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
 
+                    b.Property<string>("CategoryDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CategoryName")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CategoryId");
 
@@ -81,46 +81,38 @@ namespace ETicaretApp.DAL.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("City")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Country")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("SellingActionSellingId")
                         .HasColumnType("int");
 
                     b.Property<string>("Surname")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CustomerId");
 
@@ -139,8 +131,7 @@ namespace ETicaretApp.DAL.Migrations
 
                     b.Property<string>("DepartmentName")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("DepartmentId");
 
@@ -160,16 +151,14 @@ namespace ETicaretApp.DAL.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("varchar");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("SellingActionSellingId")
+                    b.Property<int?>("SellingActionSellingId")
                         .HasColumnType("int");
 
                     b.Property<string>("Surname")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType(" varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("EmployeesId");
 
@@ -188,35 +177,69 @@ namespace ETicaretApp.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
 
-                    b.Property<int>("CustomerId")
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CustomerID")
                         .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ErrLoc")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ErrMsg")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("OrderName")
+                    b.Property<string>("OrderNumber")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OrderStatus")
                         .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PaymentID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("sername")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("OrderId");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("CustomerID");
+
+                    b.HasIndex("PaymentID")
+                        .IsUnique();
 
                     b.ToTable("Orders");
                 });
@@ -229,17 +252,24 @@ namespace ETicaretApp.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderDetailId"));
 
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
                     b.Property<double>("Discount")
                         .HasColumnType("float");
 
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
+                    b.Property<string>("OrderNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("OrderStatus")
+                        .HasColumnType("bit");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("Quantity")
                         .HasColumnType("decimal(18,2)");
@@ -249,32 +279,34 @@ namespace ETicaretApp.DAL.Migrations
 
                     b.Property<string>("color")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("size")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("OrderDetailId");
 
-                    b.HasIndex("CustomerId");
-
                     b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("ETicaratApp.Entities.Payment", b =>
                 {
-                    b.Property<int>("CustomerId")
+                    b.Property<int>("PaymentId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentId"));
 
-                    b.HasKey("CustomerId");
+                    b.Property<string>("PaymentType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PaymentId");
 
                     b.ToTable("Payments");
                 });
@@ -287,12 +319,10 @@ namespace ETicaretApp.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentMethodId"));
 
-                    b.Property<int?>("PaymentCustomerId")
+                    b.Property<int>("paymentId")
                         .HasColumnType("int");
 
                     b.HasKey("PaymentMethodId");
-
-                    b.HasIndex("PaymentCustomerId");
 
                     b.ToTable("PaymentMethods");
                 });
@@ -308,42 +338,37 @@ namespace ETicaretApp.DAL.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<bool?>("CurrentOrder")
+                        .HasColumnType("bit");
+
                     b.Property<short>("Discount")
                         .HasColumnType("smallint");
+
+                    b.Property<bool?>("DiscountAvailable")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsStock")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("OrderDetailId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("OrderId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ProducktImage")
                         .IsRequired()
-                        .HasMaxLength(270)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductBrand")
                         .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductDescription")
                         .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductFeatur")
                         .IsRequired()
-                        .HasMaxLength(300)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
-                        .HasMaxLength(40)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<short>("ProductStock")
                         .HasColumnType("smallint");
@@ -354,23 +379,20 @@ namespace ETicaretApp.DAL.Migrations
                     b.Property<decimal>("SellingPrice")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("UnitPrice")
+                        .HasColumnType("int");
+
                     b.Property<string>("color")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("size")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("Varchar");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProductId");
 
                     b.HasIndex("CategoryId");
-
-                    b.HasIndex("OrderDetailId");
-
-                    b.HasIndex("OrderId");
 
                     b.HasIndex("SellingActionSellingId");
 
@@ -420,7 +442,12 @@ namespace ETicaretApp.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WorkTaskId"));
 
+                    b.Property<int>("AdminId")
+                        .HasColumnType("int");
+
                     b.HasKey("WorkTaskId");
+
+                    b.HasIndex("AdminId");
 
                     b.ToTable("WorkTasks");
                 });
@@ -444,52 +471,49 @@ namespace ETicaretApp.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ETicaratApp.Entities.SellingAction", "SellingAction")
+                    b.HasOne("ETicaratApp.Entities.SellingAction", null)
                         .WithMany("Employees")
-                        .HasForeignKey("SellingActionSellingId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SellingActionSellingId");
 
                     b.Navigation("Department");
-
-                    b.Navigation("SellingAction");
                 });
 
             modelBuilder.Entity("ETicaratApp.Entities.Order", b =>
                 {
                     b.HasOne("ETicaratApp.Entities.Concrete.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
+                        .WithMany("Orders")
+                        .HasForeignKey("CustomerID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ETicaratApp.Entities.Payment", "Payment")
+                        .WithOne("Order")
+                        .HasForeignKey("ETicaratApp.Entities.Order", "PaymentID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Customer");
+
+                    b.Navigation("Payment");
                 });
 
             modelBuilder.Entity("ETicaratApp.Entities.OrderDetail", b =>
                 {
-                    b.HasOne("ETicaratApp.Entities.Concrete.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("ETicaratApp.Entities.Order", "Order")
-                        .WithMany()
+                        .WithMany("OrderDetails")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Customer");
+                    b.HasOne("ETicaratApp.Entities.Product", "Product")
+                        .WithMany("OrderDetail")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Order");
-                });
 
-            modelBuilder.Entity("ETicaratApp.Entities.PaymentMethod", b =>
-                {
-                    b.HasOne("ETicaratApp.Entities.Payment", null)
-                        .WithMany("PaymentMethods")
-                        .HasForeignKey("PaymentCustomerId");
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("ETicaratApp.Entities.Product", b =>
@@ -499,14 +523,6 @@ namespace ETicaretApp.DAL.Migrations
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("ETicaratApp.Entities.OrderDetail", null)
-                        .WithMany("Products")
-                        .HasForeignKey("OrderDetailId");
-
-                    b.HasOne("ETicaratApp.Entities.Order", null)
-                        .WithMany("Products")
-                        .HasForeignKey("OrderId");
 
                     b.HasOne("ETicaratApp.Entities.SellingAction", "SellingAction")
                         .WithMany("Products")
@@ -519,9 +535,25 @@ namespace ETicaretApp.DAL.Migrations
                     b.Navigation("SellingAction");
                 });
 
+            modelBuilder.Entity("ETicaratApp.Entities.WorkTask", b =>
+                {
+                    b.HasOne("ETicaratApp.Entities.Concrete.Admin", "Admin")
+                        .WithMany()
+                        .HasForeignKey("AdminId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Admin");
+                });
+
             modelBuilder.Entity("ETicaratApp.Entities.Concrete.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("ETicaratApp.Entities.Concrete.Customer", b =>
+                {
+                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("ETicaratApp.Entities.Department", b =>
@@ -531,17 +563,18 @@ namespace ETicaretApp.DAL.Migrations
 
             modelBuilder.Entity("ETicaratApp.Entities.Order", b =>
                 {
-                    b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("ETicaratApp.Entities.OrderDetail", b =>
-                {
-                    b.Navigation("Products");
+                    b.Navigation("OrderDetails");
                 });
 
             modelBuilder.Entity("ETicaratApp.Entities.Payment", b =>
                 {
-                    b.Navigation("PaymentMethods");
+                    b.Navigation("Order")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ETicaratApp.Entities.Product", b =>
+                {
+                    b.Navigation("OrderDetail");
                 });
 
             modelBuilder.Entity("ETicaratApp.Entities.SellingAction", b =>
