@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.DAL.Repostories
 {
-    internal class AdimRepostory
+    internal class AdminRepostory
     {
     }
 }
