@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretApp.DAL.Repostories
+namespace ETicaretApp.DAL.Abstarct
 {
-    internal class ISalesVaultAction
+    internal interface IPaymentMethodDal
     {
     }
 }

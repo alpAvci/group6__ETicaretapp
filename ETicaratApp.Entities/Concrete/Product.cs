@@ -17,8 +17,10 @@ namespace ETicaratApp.Entities
         //[ForeignKey("Category")]
         public int CategoryId { get; set; }
 
-        
- 
+        public int CommentId { get; set; }
+
+
+
         public string ProductName  { get; set; }
         public string ProductBrand { get; set; } 
         public string color { get; set; }
@@ -43,11 +45,13 @@ namespace ETicaratApp.Entities
         
        
         
-        public SellingAction SellingAction { get; set; }
+        public virtual List<SellingAction> SellingActions { get; set; }
         
         public virtual Category Category { get; set; }
 
-        public virtual List<OrderDetail> OrderDetail { get; set; }
+        public virtual List<OrderDetail> OrderDetails { get; set; }
+
+        public virtual List<Comment> Comments { get; set; } 
 
 
     }

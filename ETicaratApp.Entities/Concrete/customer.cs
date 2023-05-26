@@ -25,8 +25,13 @@ namespace ETicaratApp.Entities.Concrete
         public string Address { get; set; }
 
 
-        public SellingAction SellingAction { get; set; }
-        public virtual ICollection<Order> Orders { get;}=new List<Order>();
+        public virtual List<SellingAction> SellingActions { get; set; }
+        public virtual List<Order> Order { get; set; }
+
+        public virtual  List<Comment> Comments { get; set; }
+
+        public virtual List<Product> Products { get; set; }
+
     }
 
 

@@ -19,8 +19,8 @@ namespace ETicaratApp.Entities
         public int CustomerID { get; set; }
 
         //[ForeignKey("Payment")]
-        public int PaymentID { get; set; }
-
+        public int PaymentId { get; set; }
+        public int EmployeeId { get; set; }
 
 
 

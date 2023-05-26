@@ -23,5 +23,6 @@ namespace ETicaratApp.Entities
        
         public virtual Department Department { get; set; }
 
+        public virtual List<SellingAction> SellingActions { get; set; }
     }
 }

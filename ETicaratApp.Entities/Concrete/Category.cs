@@ -12,13 +12,13 @@ namespace ETicaratApp.Entities.Concrete
     {
         [Key]
         public int CategoryId { get; set; }
-
+           public int ProductId { get; set; }
         
         public string CategoryName { get; set; }
 
         public string CategoryDescription { get; set; }
 
-        public virtual ICollection<Product> Products { get; } = new List<Product>();
+        public virtual List<Product> Products { get; set; }
 
     }
 }

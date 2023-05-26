@@ -13,14 +13,16 @@ namespace ETicaratApp.Entities
         [Key]
         public int SellingId { get; set; }
         
+        public int ProductId { get; set; }
         
         public  DateTime Date  { get; set; }
         public int Unit { get; set; }
         public int TotalCost { get; set; }
 
-        public ICollection<Product>  Products { get;}
-        public ICollection<Customer> Customers  { get;}
-        public ICollection<Employee> Employees  { get;}
+        public virtual Product Product { get; set; }
+       
+        public virtual Customer Customer { get; set; }
+        public virtual Employee Employee { get; set; }
 
 
 

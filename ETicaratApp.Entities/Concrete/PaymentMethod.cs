@@ -15,5 +15,8 @@ namespace ETicaratApp.Entities
 
         public int  paymentId { get; set; }
 
+
+
+
     }
 }

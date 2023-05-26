@@ -15,7 +15,7 @@ namespace ETicaretApp.DAL.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server= (localdb)\\MSSQLLocalDB; database=EcommerceDb; Integrated Security=True; TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("server= THAVICII\\SQLSERVER; database=EcommerceDb; Integrated Security=True; TrustServerCertificate=True");
         }
 
         public DbSet<Admin> Admins { get; set; }
@@ -29,7 +29,7 @@ namespace ETicaretApp.DAL.Concrete
         public DbSet<Payment> Payments { get; set; }
         public DbSet<PaymentMethod> PaymentMethods { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<SalesVaultAction> SalesVaultActions { get; set; }
+        public DbSet<Comment> Comments { get; set; }
         public DbSet<SellingAction> SellingActions { get; set; }
         public DbSet<WorkTask> WorkTasks { get; set; }
 

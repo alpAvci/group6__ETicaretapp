@@ -17,6 +17,8 @@ namespace ETicaratApp.Entities
         public string DepartmentName { get; set; }
 
 
-        public virtual ICollection<Employee> Employees { get; }
+       public virtual List<Employee> Employees { get; set; }
+        public virtual SellingAction SellingAction { get; set; }
+
     }
 }
