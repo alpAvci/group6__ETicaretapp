@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    internal interface IOrderDetailDal
+    public interface IOrderDetailDal
     {
     }
 }
