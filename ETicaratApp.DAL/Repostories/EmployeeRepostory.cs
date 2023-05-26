@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.DAL.Repostories
 {
-    internal class Payment
+    internal class EmployeeRepostory
     {
     }
 }

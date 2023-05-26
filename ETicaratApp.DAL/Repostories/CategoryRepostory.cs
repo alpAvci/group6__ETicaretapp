@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretApp.DAL.Repostories
+namespace ETicaratApp.DAL.Repostories
 {
-    internal class Order
+    internal class CategoryRepostory
     {
     }
 }

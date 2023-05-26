@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.DAL.Repostories
 {
-    internal class Department
+    internal class WorkTaskRepostory
     {
     }
 }

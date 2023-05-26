@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaratApp.DAL.Repostories
 {
-    internal class Category
+    internal class ProductRepostory
     {
     }
 }

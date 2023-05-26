@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaratApp.DAL.Repostories
+namespace ETicaretApp.DAL.Repostories
 {
-    internal class Employee
+    internal class AdimRepostory
     {
     }
 }
