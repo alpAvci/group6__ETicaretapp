@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ETicaratApp.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,16 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.BLL.Abstract
 {
-    public class IProductService
+    public interface IProductService
     {
+        void  ProductAdd(Product  Product);
+
+        void  ProductDelete(Product  Product);
+
+        void ProductUpdate(Product  Product);
+
+        List<Product> GetList();
+
+        Product GetById(int id);
     }
 }

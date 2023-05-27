@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.BLL.Abstract
 {
-    public class IOrderService
+    public interface IOrderService
     {
     }
 }

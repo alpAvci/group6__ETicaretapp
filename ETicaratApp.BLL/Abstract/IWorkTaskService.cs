@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ETicaratApp.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,16 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.BLL.Abstract
 {
-    public class IWorkTaskService
+    public interface IWorkTaskService
     {
+        void WorkTaskAdd(WorkTask workTask);
+
+        void WorkTaskDelete(WorkTask workTask);
+
+        void WorkTaskUpdate(WorkTask workTask);
+
+        List<WorkTask> GetList();
+
+        WorkTask GetById(int id);
     }
 }
