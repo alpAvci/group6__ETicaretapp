@@ -7,18 +7,9 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface IAdminDal
+    public interface IAdminDal : IGenericDal<Admin>
     {
 
-        List<Admin> ListAllAdmin();
-        void AddAdmin(Admin admin);
-
-        void DeleteAdmin(Admin admin);
-
-        void UpdateAdmin(Admin admin);
-
-        
-        Admin GetById(int Id);
 
     }
 }

@@ -8,15 +8,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface ICommentDal
+    public interface ICommentDal: IGenericDal<Comment>
     {
-        List<Comment> ListAllComment();
-        void AddComment(Comment comment);
-
-        void DeleteComment(Comment comment);
-
-        void UpdateComment(Comment comment);
-
-        Comment GetById(int Id);
+  
     }
 }

@@ -7,15 +7,8 @@ using ETicaratApp.Entities;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface IEmployeeDal
+    public interface IEmployeeDal : IGenericDal<Employee>
     {
-        List<Employee> ListAllEmployee();
-        void AddEmployee(Employee employee);
 
-        void DeleteEmployee(Employee employee);
-
-        void UpdateEmployee(Employee employee);
-
-       Employee GetById(int Id);
     }
 }

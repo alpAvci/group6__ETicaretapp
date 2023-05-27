@@ -7,17 +7,8 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface ICustomerDal
+    public interface ICustomerDal : IGenericDal<Customer>
     {
-
-        List<Customer> ListAllCustomer();
-        void AddCustomer( Customer customer);
-
-        void DeleteCustomer(Customer customer );
-
-        void UpdateCustomer(Customer customer);
-
-        Customer GetById(int Id);
 
     }
 }

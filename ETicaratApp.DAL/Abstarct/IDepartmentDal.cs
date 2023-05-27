@@ -7,15 +7,8 @@ using ETicaratApp.Entities;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface IDepartmentDal
+    public interface IDepartmentDal : IGenericDal<Department>
     {
-        List<Department> ListAllDepartment();
-        void AddDepartment(Department department);
 
-        void DeleteDepartment(Department department);
-
-        void UpdateDepartment(Department department);
-
-        Department GetById(int Id);
     }
 }
