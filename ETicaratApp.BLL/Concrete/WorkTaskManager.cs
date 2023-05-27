@@ -12,29 +12,35 @@ namespace ETicaretApp.BLL.Concrete
     public class WorkTaskManager : IWorkTaskService
     {
         IWorkTaskDal _workTaskDal;
+
+        public WorkTaskManager(IWorkTaskDal workTaskDal)
+        {
+            _workTaskDal = workTaskDal;
+        }
+
         public WorkTask GetById(int id)
         {
-            throw new NotImplementedException();
+           return _workTaskDal.GetByID(id);
         }
 
         public List<WorkTask> GetList()
         {
-            throw new NotImplementedException();
+           return _workTaskDal.getListAll();
         }
 
         public void WorkTaskAdd(WorkTask workTask)
         {
-            throw new NotImplementedException();
+            _workTaskDal.insert(workTask);
         }
 
         public void WorkTaskDelete(WorkTask workTask)
         {
-            throw new NotImplementedException();
+            _workTaskDal.delete(workTask);
         }
 
         public void WorkTaskUpdate(WorkTask workTask)
         {
-            throw new NotImplementedException();
+            _workTaskDal.update(workTask);
         }
     }
 }
