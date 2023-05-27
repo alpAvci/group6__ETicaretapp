@@ -7,17 +7,8 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface IOrderDal
+    public interface IOrderDal : IGenericDal<Order>
     {
-
-        List<Order> ListAllOrder();
-        void AddOrder(Order order);
-
-        void DeleteOrder(Order order);
-
-        void UpdateOrder(Order order);
-
-        Order GetById(int Id);
 
     }
 }

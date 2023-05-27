@@ -7,16 +7,9 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface IWorkTaskDal
+    public interface IWorkTaskDal : IGenericDal<WorkTask>
     {
-        List<WorkTask> ListAllWorkTask();
-        void AddWorkTask(WorkTask worktask);
-
-        void DeleteWorkTask(WorkTask worktask);
-
-        void UpdateWorkTask(WorkTask worktask);
-
-        WorkTask GetById(int Id);
+       
 
     }
 }

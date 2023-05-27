@@ -7,16 +7,8 @@ using System.Threading.Tasks;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface IProductDal
+    public interface IProductDal : IGenericDal<Product> 
     {
-        List<Product> ListAllProduct();
-        void AddProduct(Product product);
-
-        void DeleteProduct(Product product);
-
-        void UpdateProduct(Product product);
-
-        Product GetById(int Id);
-
+       
     }
 }

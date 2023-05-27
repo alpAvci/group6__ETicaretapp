@@ -7,15 +7,8 @@ using ETicaratApp.Entities;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface IPaymentDal
+    public interface IPaymentDal : IGenericDal<Payment>
     {
-        List<Payment> ListAllPayment();
-        void AddPayment(Payment payment);
-
-        void DeletePayment(Payment payment);
-
-        void UpdatePayment(Payment payment);
-
-        Payment GetById(int Id);
+        
     }
 }

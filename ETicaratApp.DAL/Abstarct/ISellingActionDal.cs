@@ -7,15 +7,7 @@ using ETicaratApp.Entities;
 
 namespace ETicaretApp.DAL.Abstarct
 {
-    public interface ISellingActionDal
+    public interface ISellingActionDal : IGenericDal<SellingAction>
     {
-        List<SellingAction> ListAllSellingAction();
-        void AddSellingAction(SellingAction sellingAction);
-
-        void DeleteSellingAction(SellingAction sellingAction);
-
-        void UpdateSellingAction(SellingAction sellingAction);
-
-        SellingAction GetById(int Id);
     }
 }
