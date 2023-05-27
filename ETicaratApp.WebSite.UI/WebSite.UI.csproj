@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ETicaratApp.BLL\ETicaretApp.BLL.csproj" />
-    <ProjectReference Include="..\ETicaratApp.DAL\ETicaretApp.DAL.csproj" />
-    <ProjectReference Include="..\ETicaratApp.Entities\ETicaratApp.Entities.csproj" />
+    <ProjectReference Include="..\ETicaratApp.BLL\BussinesLayer.csproj" />
+    <ProjectReference Include="..\ETicaratApp.DAL\DataAccesLayer.csproj" />
+    <ProjectReference Include="..\ETicaratApp.Entities\EntitiesLayer.csproj" />
   </ItemGroup>
 
 </Project>

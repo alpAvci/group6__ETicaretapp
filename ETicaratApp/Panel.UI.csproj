@@ -1,19 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="DTOs\**" />
-    <Compile Remove="Helpers\**" />
-    <EmbeddedResource Remove="DTOs\**" />
-    <EmbeddedResource Remove="Helpers\**" />
-    <None Remove="DTOs\**" />
-    <None Remove="Helpers\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
@@ -26,15 +17,20 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.13" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ETicaratApp.DAL\ETicaretApp.DAL.csproj" />
-    <ProjectReference Include="..\ETicaratApp.Entities\ETicaratApp.Entities.csproj" />
+    <ProjectReference Include="..\ETicaratApp.BLL\BussinesLayer.csproj" />
+    <ProjectReference Include="..\ETicaratApp.DAL\DataAccesLayer.csproj" />
+    <ProjectReference Include="..\ETicaratApp.Entities\EntitiesLayer.csproj" />
+    <ProjectReference Include="..\ETicaratApp.WebSite.UI\WebSite.UI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ValiditonRules\" />
+    <Content Update="Views\Home\Privacy.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
