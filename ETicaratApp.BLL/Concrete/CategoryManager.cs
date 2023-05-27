@@ -1,5 +1,6 @@
 ﻿using ETicaratApp.Entities.Concrete;
 using ETicaretApp.BLL.Abstract;
+using ETicaretApp.DAL.Abstarct;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +11,35 @@ namespace ETicaretApp.BLL.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        public void CategoryAdd(Category category)
+        ICategoryDal _categoryDal;
+
+        public CategoryManager(ICategoryDal categoryDal)
         {
-            throw new NotImplementedException();
+            _categoryDal = categoryDal;
         }
 
+        public void CategoryAdd(Category category)
+        {
+            _categoryDal.insert(category);
+        }
         public void CategoryDelete(Category category)
         {
-            throw new NotImplementedException();
+           _categoryDal.delete(category);
         }
 
         public void CategoryUpdate(Category category)
         {
-            throw new NotImplementedException();
+            _categoryDal.update(category);
         }
 
-        public Category GetByID(int id)
+        public Category GetById(int id)
         {
-            throw new NotImplementedException();
+            return _categoryDal.GetByID(id);
         }
 
         public List<Category> GetList()
         {
-            throw new NotImplementedException();
+                return _categoryDal.getListAll();
         }
     }
 }
