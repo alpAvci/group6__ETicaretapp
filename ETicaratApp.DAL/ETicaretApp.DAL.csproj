@@ -35,8 +35,4 @@
     <ProjectReference Include="..\ETicaratApp.Entities\ETicaratApp.Entities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Entity Framework\" />
-  </ItemGroup>
-
 </Project>
