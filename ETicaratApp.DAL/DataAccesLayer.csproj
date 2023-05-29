@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ETicaratApp.Entities\ETicaratApp.Entities.csproj" />
+    <ProjectReference Include="..\ETicaratApp.Entities\EntitiesLayer.csproj" />
   </ItemGroup>
 
 </Project>
