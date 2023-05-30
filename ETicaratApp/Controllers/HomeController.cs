@@ -13,7 +13,7 @@ namespace ETicaratApp.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult access()
         {
             return View();
         }

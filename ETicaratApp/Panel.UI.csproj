@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CoreLayer\CoreLayer.csproj" />
     <ProjectReference Include="..\ETicaratApp.BLL\BussinesLayer.csproj" />
     <ProjectReference Include="..\ETicaratApp.DAL\DataAccesLayer.csproj" />
     <ProjectReference Include="..\ETicaratApp.Entities\EntitiesLayer.csproj" />

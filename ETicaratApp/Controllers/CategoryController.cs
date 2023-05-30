@@ -4,16 +4,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ETicaretApp.Panel.UI.Controllers
 {
-    public class Category : Controller
+    public class CategoryController : Controller
     {
 
-        CategoryManager cm = new CategoryManager(new EfCategoryRepository());
+       
         public IActionResult Index()
         {
 
-            var values = cm.GetList();
+            
 
-            return View(values);
+            return View();
         }
     }
 }
