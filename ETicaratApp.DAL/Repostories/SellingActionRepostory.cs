@@ -1,5 +1,5 @@
-﻿using ETicaratApp.Entities;
-using ETicaratApp.Entities.Concrete;
+﻿using ETicaretApp.EntitiesLayer;
+using ETicaretApp.EntitiesLayer.Concrete;
 using ETicaretApp.DAL.Abstarct;
 using ETicaretApp.DAL.Concrete;
 using System;
