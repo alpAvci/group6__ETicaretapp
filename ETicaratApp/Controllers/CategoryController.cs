@@ -34,12 +34,34 @@ namespace ETicaretApp.Panel.UI.Controllers
         }
 
 
+        public IActionResult CategoryRemove(int id)
+        {
+            var cate = c.Categories.Find(id);
+            c.Categories.Remove(cate);
+            c.SaveChanges();
+            return RedirectToAction("Index");
 
-       
+        }
 
 
+        public IActionResult CategoryFetch(int id)
+        {
+            var category = c.Categories.Find(id);
+            return View("CategoryFetch",category);
 
 
+        }
+
+
+        public IActionResult CategoryUpdate(Category K)
+        {
+            var ctg = c.Categories.Find(K.CategoryId);
+            ctg.CategoryName = K.CategoryName;
+
+            c.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
 
 
     }

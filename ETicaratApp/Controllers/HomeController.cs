@@ -1,4 +1,4 @@
-﻿using ETicaratApp.Models;
+﻿using ETicaretApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
