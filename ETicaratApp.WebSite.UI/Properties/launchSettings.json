@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "ETicaratApp.WebSite.UI": {
+    "ETicaretApp.WebSite.UI": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

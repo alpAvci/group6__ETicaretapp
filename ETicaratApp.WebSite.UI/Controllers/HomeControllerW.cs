@@ -1,8 +1,8 @@
-﻿using ETicaratApp.WebSite.UI.Models;
+﻿using ETicaretApp.WebSite.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace ETicaratApp.WebSite.UI.Controllers
+namespace ETicaretApp.WebSite.UI.Controllers
 {
     public class HomeController : Controller
     {

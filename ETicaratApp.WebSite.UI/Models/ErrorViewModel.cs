@@ -1,4 +1,4 @@
-namespace ETicaratApp.WebSite.UI.Models
+namespace ETicaretApp.WebSite.UI.Models
 {
     public class ErrorViewModel
     {

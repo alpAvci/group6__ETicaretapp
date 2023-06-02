@@ -3,9 +3,7 @@ using ETicaretApp.DAL.Concrete;
 using ETicaretApp.DAL.Entity_Framework;
 using Microsoft.AspNetCore.Mvc;
 using ETicaretApp.DAL.Concrete;
-
-
-using ETicaratApp.Entities.Concrete;
+using ETicaretApp.EntitiesLayer.Concrete;
 
 namespace ETicaretApp.Panel.UI.Controllers
 {
