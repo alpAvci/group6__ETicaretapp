@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Panel.UI", "ETicaratApp\Pan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSite.UI", "ETicaratApp.WebSite.UI\WebSite.UI.csproj", "{D4ECE347-FE20-4DBD-90EA-398D8032A37B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccesLayer", "ETicaratApp.DAL\DataAccesLayer.csproj", "{C00202BD-7479-4C65-9151-2FA202A6C89A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "ETicaratApp.DAL\DAL.csproj", "{C00202BD-7479-4C65-9151-2FA202A6C89A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BussinesLayer", "ETicaratApp.BLL\BussinesLayer.csproj", "{81B00F31-1543-4067-B53C-A820474FBAF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "ETicaratApp.BLL\BLL.csproj", "{81B00F31-1543-4067-B53C-A820474FBAF3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntitiesLayer", "ETicaratApp.Entities\EntitiesLayer.csproj", "{B27877C2-DF34-44EC-959F-33DE92F99665}"
 EndProject

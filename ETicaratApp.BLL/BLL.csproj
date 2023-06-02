@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ETicaratApp.DAL\DataAccesLayer.csproj" />
+    <ProjectReference Include="..\ETicaratApp.DAL\DAL.csproj" />
     <ProjectReference Include="..\ETicaratApp.Entities\EntitiesLayer.csproj" />
   </ItemGroup>
 

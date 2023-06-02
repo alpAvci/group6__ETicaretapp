@@ -1,4 +1,4 @@
-﻿using ETicaratApp.Entities;
+﻿using ETicaretApp.EntitiesLayer.Concrete;
 using ETicaretApp.DAL.Abstarct;
 using ETicaretApp.DAL.Repostories;
 using System;
