@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ETicaratApp.Entities;
+using ETicaretApp.EntitiesLayer.Concrete;
 using ETicaretApp.BLL.Abstract;
 using ETicaretApp.DAL.Abstarct;
 
