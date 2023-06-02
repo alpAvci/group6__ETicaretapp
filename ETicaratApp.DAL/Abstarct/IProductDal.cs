@@ -1,5 +1,5 @@
 ﻿
-using ETicaratApp.Entities;
+using Eticaret.EntitiesLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;

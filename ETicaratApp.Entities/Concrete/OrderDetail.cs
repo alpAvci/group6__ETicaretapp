@@ -5,10 +5,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ETicaratApp.Entities.Concrete;
+using ETicaretApp.EntitiesLayer.Concrete;
 using System.Security.Cryptography.X509Certificates;
 
-namespace ETicaratApp.Entities
+namespace ETicaretApp.EntitiesLayer.Concrete
 {
     public  partial class OrderDetail
     {

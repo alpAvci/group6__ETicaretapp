@@ -1,6 +1,5 @@
 ﻿
-using ETicaratApp.Entities;
-using ETicaratApp.Entities.Concrete;
+using Eticaret.EntitiesLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System;

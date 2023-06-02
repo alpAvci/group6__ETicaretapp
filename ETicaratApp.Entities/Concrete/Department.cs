@@ -5,8 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ETicaretApp.EntitiesLayer.Concrete;
 
-namespace ETicaratApp.Entities
+namespace ETicaretApp.EntitiesLayer.Concrete
 {
     public partial class Department
     {

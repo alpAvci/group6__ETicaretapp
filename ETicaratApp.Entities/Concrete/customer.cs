@@ -6,8 +6,9 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using ETicaretApp.EntitiesLayer.Concrete;
 
-namespace ETicaratApp.Entities.Concrete
+namespace ETicaretApp.EntitiesLayer.Concrete
 {
     public partial class Customer
     {

@@ -5,16 +5,18 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ETicaratApp.Entities.Concrete;
+using ETicaretApp.EntitiesLayer.Concrete;
 
-namespace ETicaratApp.Entities
+namespace ETicaretApp.EntitiesLayer.Concrete
 {
-   public partial class Order
+
+
+    public partial class Order
     {
 
         [Key]
         public int OrderId { get; set; }
-        
+
         //[ForeignKey("Customer")]
         public int CustomerID { get; set; }
 
@@ -27,7 +29,7 @@ namespace ETicaratApp.Entities
 
         public string OrderNumber { get; set; }
         public string Name { get; set; }
-        public string sername{ get; set; }
+        public string sername { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
@@ -50,4 +52,8 @@ namespace ETicaratApp.Entities
 
 
     }
+
+
+
+
 }

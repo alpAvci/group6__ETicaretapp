@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ETicaratApp.Entities.Concrete;
+using Eticaret.EntitiesLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
 
 namespace ETicaretApp.DAL.Abstarct
