@@ -18,6 +18,13 @@ namespace ETicaretApp.DAL.Concrete
             optionsBuilder.UseSqlServer("server= THAVICII\\SQLSERVER; database=EcommerceDb; Integrated Security=True; TrustServerCertificate=True");
         }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Model yapılandırması ve ilişkilerin tanımlanması
+        }
+
+
         public DbSet<Admin> Admins { get; set; }
 
         public DbSet<Category> Categories { get; set; }

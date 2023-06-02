@@ -1,0 +1,17 @@
+﻿@using ETicaratApp.Entities.Concrete
+@model ETicaretApp.DAL.Concrete.Context
+@{
+    ViewData["Title"] = "CategoryAdd";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>CategoryAdd</h1>
+<br />
+
+<form class=" form-group " method="post">
+
+   @Html.LabelFor(x => x.Categories)
+   @Html.TextBoxFor(x => x.Categories,new {@class = "for-control" })
+   <br />
+   <button class=" btn btn-info">Kaydet</button>
+</form>
